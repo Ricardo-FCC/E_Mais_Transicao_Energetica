@@ -59,11 +59,17 @@ A organização deste repositório segue rigorosamente os critérios do Hackatho
 
 ---
 
-### 👨‍💻 Time PID · Nexus
-- **Equipe:** [Seu Nome / Equipe]
-- **Evento:** Hackathon E+
+## 👥 Equipe PID · Nexus
+
+| Nome | Função | E-mail |
+| :--- | :--- | :--- |
+| **Lucas Ricardo Paulino Cabral** | Otimizador de Fluxo | lucaspaulinicabral@gmail.com |
+| **Ricardo Falcão Carneiro da Cunha** | Desenvolvedor Full Stack | ricardofalcaocc@gmail.com |
+| **Thales Martins Bezerra** | Engenharia e Conhecimento Técnico | thalesmartinsbezerra9@gmail.com |
+| **Wênnia Nascimento de Figueiredo** | Negócios | wenniafg.empresarial@gmail.com |
 
 ---
 <p align="center">
   Desenvolvido com ❤️ para um futuro mais sustentável.
 </p>
+
