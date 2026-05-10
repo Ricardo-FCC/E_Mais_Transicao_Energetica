@@ -15,7 +15,7 @@
 
 ### Qual é o manual da solução criada?
 **R:** 
-1. **Acesso:** A solução está disponível publicamente via URL: [https://nexus-alpha-liard-60.vercel.app](https://nexus-alpha-liard-60.vercel.app).
+1. **Acesso:** A solução está disponível publicamente via URL: [https://nexus-alpha-team.vercel.app/](https://nexus-alpha-team.vercel.app/).
 2. **Navegação:** O usuário utiliza a barra lateral (Sidebar) para alternar entre os módulos:
    - **Mapa (IpnMap):** Visualização de pontos estratégicos de energia e recursos naturais na América Latina.
    - **Base de Dados:** Pesquisa semântica em mais de 20 fontes oficiais (IBGE, EPE, ANP, etc.).
