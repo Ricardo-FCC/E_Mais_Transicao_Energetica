@@ -47,7 +47,7 @@ export function SettingsPanel() {
             <div className="flex items-start justify-between gap-4">
               <div className="space-y-0.5">
                 <Label className="text-sm font-bold text-[#03254D]">Alertas de Crédito de Carbono</Label>
-                <p className="text-xs text-muted-foreground italic">Notificar quando ativos de alta integridade (Nexus Market) estiverem disponíveis.</p>
+                <p className="text-xs text-muted-foreground italic">Notificar quando ativos de alta integridade estiverem disponíveis.</p>
               </div>
               <Switch defaultChecked />
             </div>

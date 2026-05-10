@@ -4,7 +4,6 @@ import { UserRound } from "lucide-react"
 import { Sidebar } from "@/components/Sidebar"
 import { IpnMap } from "@/components/IpnMap"
 import { SimulatorPanel } from "@/components/SimulatorPanel"
-import { MarketplacePanel } from "@/components/MarketplacePanel"
 import { MatchingPanel } from "@/components/MatchingPanel"
 import { SettingsPanel } from "@/components/SettingsPanel"
 import { DatabasePanel } from "@/components/DatabasePanel"
@@ -103,7 +102,6 @@ export default function Home() {
           {activeTab === "database" && <DatabasePanel />}
           {activeTab === "copilot" && <CopilotPanel profileId={selectedProfileId} selectedRegion={selectedRegion} />}
           {activeTab === "sim" && <SimulatorPanel profileId={selectedProfileId} selectedRegion={selectedRegion} />}
-          {activeTab === "market" && <MarketplacePanel />}
           {activeTab === "match" && <MatchingPanel />}
           {activeTab === "settings" && <SettingsPanel />}
         </div>
