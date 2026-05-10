@@ -16,6 +16,7 @@
 # next.js
 /.next/
 /out/
+1-Codigo-Fonte/.next/
 
 # production
 /build
@@ -39,5 +40,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# nested app workspace
+1-Codigo-Fonte/node_modules/
+1-Codigo-Fonte/install.log
+1-Codigo-Fonte/.vscode/
 
 .vercel

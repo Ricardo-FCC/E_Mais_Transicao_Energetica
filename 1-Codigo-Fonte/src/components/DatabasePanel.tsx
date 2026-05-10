@@ -1,6 +1,6 @@
 ﻿import { Badge } from "@/components/ui/badge"
 import { useState } from "react"
-import { Search, Filter, BookOpen, Download, ExternalLink, CheckCircle2, ChevronDown, Database } from "lucide-react"
+import { Search, ExternalLink, CheckCircle2, ChevronDown, Database } from "lucide-react"
 
 const mockResults = [
   {
@@ -267,16 +267,16 @@ export function DatabasePanel() {
   )
 
   return (
-    <div className="h-full bg-slate-50 flex flex-col p-8 overflow-hidden font-sans">
+    <div className="h-full bg-slate-50 flex flex-col overflow-hidden p-4 font-sans md:p-8">
       {/* Header Search */}
-      <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 mb-6 shrink-0">
+      <div className="mb-6 shrink-0 rounded-xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
         <h2 className="text-2xl font-bold text-[#03254D] mb-2 flex items-center gap-2">
           <Database className="w-6 h-6 text-[#FA441A]" />
           Base de Conhecimento Nexus (Acervo Estratégico)
         </h2>
         <p className="text-sm text-slate-500 mb-6">Conexão direta com as principais fontes oficiais de dados ambientais, agronegócio e energia do Brasil e do mundo.</p>
         
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-4 lg:flex-row">
           <div className="relative flex-1">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
             <input 
@@ -287,15 +287,15 @@ export function DatabasePanel() {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <button className="px-8 py-4 bg-[#03254D] text-white rounded-lg font-bold hover:bg-[#043b7a] transition-colors flex items-center gap-2">
+          <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#03254D] px-8 py-4 font-bold text-white transition-colors hover:bg-[#043b7a] lg:w-auto">
             <Search className="w-4 h-4" /> Filtrar Bases
           </button>
         </div>
       </div>
 
-      <div className="flex gap-8 flex-1 overflow-hidden">
+      <div className="flex flex-1 flex-col gap-6 overflow-hidden xl:flex-row xl:gap-8">
         {/* Sidebar Filters */}
-        <div className="w-64 shrink-0 overflow-y-auto pr-2 space-y-4 pb-10 custom-scrollbar">
+        <div className="custom-scrollbar w-full shrink-0 space-y-4 overflow-y-auto pb-2 pr-0 xl:w-64 xl:pb-10 xl:pr-2">
           <div className="text-sm font-bold text-slate-700 mb-4">{filteredResults.length} fontes integradas</div>
 
           <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
@@ -317,10 +317,10 @@ export function DatabasePanel() {
         </div>
 
         {/* Results List */}
-        <div className="flex-1 overflow-y-auto pb-10 space-y-4 pr-4 custom-scrollbar">
+        <div className="custom-scrollbar min-w-0 flex-1 space-y-4 overflow-y-auto pb-10 pr-0 md:pr-4">
           {filteredResults.map(res => (
             <div key={res.id} className="bg-white border border-slate-200 rounded-xl p-6 hover:border-[#FA441A]/30 transition-all group shadow-sm hover:shadow-md">
-              <div className="flex items-center gap-3 mb-3">
+              <div className="mb-3 flex flex-wrap items-center gap-2 md:gap-3">
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{res.base}</span>
                 <Badge variant="outline" className="text-[10px] text-[#4D4E03] border-[#BECCCC] bg-slate-50 h-5">
                   <CheckCircle2 className="w-3 h-3 mr-1" /> FONTE OFICIAL
@@ -330,21 +330,21 @@ export function DatabasePanel() {
                 </Badge>
               </div>
               
-              <a href={res.url} target="_blank" rel="noopener noreferrer" className="block text-lg font-bold text-[#03254D] hover:text-[#FA441A] transition-colors mb-2">
+              <a href={res.url} target="_blank" rel="noopener noreferrer" className="mb-2 block text-lg font-bold leading-snug text-[#03254D] transition-colors hover:text-[#FA441A]">
                 {res.title}
               </a>
               
-              <div className="flex relative mt-4">
+              <div className="relative mt-4 flex items-start">
                 <div className="w-1.5 h-auto bg-gradient-to-b from-[#FA441A] via-[#03254D] to-[#4D4E03] rounded-l-sm mr-4" />
                 <p className="text-sm text-slate-600 leading-relaxed">
                   {res.abstract}
                 </p>
               </div>
 
-              <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div className="mt-4 flex flex-col gap-3 border-t border-slate-100 pt-4 sm:flex-row sm:items-center sm:justify-between">
                 <span className="text-xs font-bold text-slate-400 italic">{res.authors}</span>
                 <div className="flex items-center gap-4">
-                  <a href={res.url} target="_blank" rel="noopener noreferrer" className="text-xs font-bold text-[#03254D] flex items-center gap-1.5 px-4 py-2 bg-slate-100 rounded-lg hover:bg-[#FA441A] hover:text-white transition-all">
+                  <a href={res.url} target="_blank" rel="noopener noreferrer" className="flex w-full items-center justify-center gap-1.5 rounded-lg bg-slate-100 px-4 py-2 text-xs font-bold text-[#03254D] transition-all hover:bg-[#FA441A] hover:text-white sm:w-auto">
                     Acessar Plataforma <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>

@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className="light">
-      <body className={`${spaceGrotesk.variable} ${jetBrainsMono.variable} ${montserrat.variable} font-sans antialiased h-screen overflow-hidden bg-white text-[#01213F]`}>
+    <html lang="pt-BR" className="light h-full">
+      <body className={`${spaceGrotesk.variable} ${jetBrainsMono.variable} ${montserrat.variable} min-h-dvh bg-white text-[#01213F] font-sans antialiased`}>
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
