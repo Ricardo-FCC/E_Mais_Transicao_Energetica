@@ -1,5 +1,5 @@
 ﻿"use client"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { UserRound } from "lucide-react"
 import { Sidebar } from "@/components/Sidebar"
 import { IpnMap } from "@/components/IpnMap"
@@ -19,12 +19,16 @@ import { demoProfileById, getDemoRegionById, type DemoProfileId } from "@/lib/de
 export default function Home() {
   const [activeTab, setActiveTab] = useState<AppTabId>("map")
   const [isSidebarOpen, setIsSidebarOpen] = useState(true)
-  const [isOnboardingOpen, setIsOnboardingOpen] = useState(true)
+  const [isOnboardingOpen, setIsOnboardingOpen] = useState(false)
   const [selectedProfileId, setSelectedProfileId] = useState<DemoProfileId>("investor")
   const [selectedRegionId, setSelectedRegionId] = useState<string | null>(null)
 
   const selectedProfile = demoProfileById[selectedProfileId]
   const selectedRegion = getDemoRegionById(selectedRegionId)
+
+  useEffect(() => {
+    setIsOnboardingOpen(true)
+  }, [])
 
   const handleTabChange = (tab: AppTabId) => {
     setActiveTab(tab)
