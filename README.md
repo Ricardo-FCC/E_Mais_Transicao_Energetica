@@ -10,7 +10,7 @@
 ---
 
 ## 🔗 Links Úteis
-- **🌐 Site Oficial (Live):** [https://nexus-alpha-team-1yxts42nq-ricardo-fccs-projects.vercel.app/v](https://nexus-alpha-team-1yxts42nq-ricardo-fccs-projects.vercel.app/)
+- **🌐 Site Oficial (Live):** [https://nexus-alpha-team-1yxts42nq-ricardo-fccs-projects.vercel.app/](https://nexus-alpha-team-1yxts42nq-ricardo-fccs-projects.vercel.app/)
 - **🎥 Pitch de Apresentação:** [Link do Vídeo/Pitch]
 - **📄 Documentação Completa:** [Visualizar Documentação](./3-Documentacao/RESPOSTAS.md)
 
