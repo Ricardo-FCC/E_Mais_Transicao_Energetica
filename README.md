@@ -11,7 +11,7 @@
 
 ## 🔗 Links Úteis
 - **🌐 Site Oficial (Live):** [https://nexus-alpha-team.vercel.app/](https://nexus-alpha-team.vercel.app/)
-- **🎥 Pitch de Apresentação:** [Link do Vídeo/Pitch]
+- **🎥 Pitch de Apresentação:** [Link do Vídeo/Pitch](https://youtu.be/ouZvHms18OI)
 - **📄 Documentação Completa:** [Visualizar Documentação](./3-Documentacao/RESPOSTAS.md)
 
 ---
@@ -24,29 +24,6 @@ A organização deste repositório segue rigorosamente os critérios do Hackatho
 *   📂 **[2-Design](./2-Design):** Identidade visual, logos, fluxograma e wireframes.
 *   📂 **[3-Documentacao](./3-Documentacao):** Estudo de viabilidade, diferenciais e impacto social.
 *   📂 **[4-Detalhes-Tecnicos](./4-Detalhes-Tecnicos):** Especificações da stack e manual do usuário.
-
----
-
-## 📸 Screenshots da Plataforma
-
-<table style="width: 100%">
-  <tr>
-    <td style="width: 50%">
-      <img src="./2-Design/4-Prototipo-Final/1-Mapa.png" alt="Mapa Interativo">
-      <p align="center"><i>Mapa de Ativos Energéticos</i></p>
-    </td>
-    <td style="width: 50%">
-      <img src="./2-Design/4-Prototipo-Final/2-Base-Dados.png" alt="Base de Dados">
-      <p align="center"><i>Busca Semântica Nexus Search</i></p>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <img src="./2-Design/4-Prototipo-Final/3-Copilot.png" width="800" alt="Copilot IA">
-  <br>
-  <i>Nexus Copilot - Assistente de IA para Transição Energética</i>
-</p>
 
 ---
 
