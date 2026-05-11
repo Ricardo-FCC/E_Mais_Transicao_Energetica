@@ -8,7 +8,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
-import { Badge } from "@/components/ui/badge"
 import { demoProfiles, type DemoProfileId } from "@/lib/demo-data"
 import { cn } from "@/lib/utils"
 
@@ -34,9 +33,6 @@ export function OnboardingProfileDialog({
       <DialogContent className="max-h-[calc(100vh-2rem)] overflow-y-auto overflow-x-hidden border border-slate-200 bg-white p-0 shadow-2xl sm:max-w-5xl lg:max-w-6xl" showCloseButton={false}>
         <div className="grid gap-0 lg:grid-cols-[1.05fr_1.4fr]">
           <div className="bg-[#03254D] px-6 py-7 text-white md:px-8 md:py-9">
-            <Badge className="mb-4 bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white">
-              Demo guiada para banca
-            </Badge>
             <DialogHeader className="gap-3">
               <DialogTitle className="text-3xl font-black tracking-tight text-white">
                 Escolha o perfil de entrada
@@ -48,7 +44,6 @@ export function OnboardingProfileDialog({
 
             <div className="mt-6 space-y-3 text-sm text-slate-200">
               <p>Fluxo recomendado: entrar, escolher perfil, clicar em uma região destacada, consultar o copiloto e rodar o Nexus Sim.</p>
-              <p>Os dados são mockados, mas coerentes com um pitch de transição energética e decisão territorial.</p>
             </div>
           </div>
 
